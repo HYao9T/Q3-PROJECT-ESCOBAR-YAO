@@ -7,7 +7,33 @@ p {
 	text-align: center;
 }
 
-h3 {
+.tab-content{
+	padding: 20px;
+}
+
+form{
+	width: 300px;
+	margin: auto;
+}
+
+h1{
+	text-align: center;
+}
+
+button{
+	margin: auto;
+}
+
+/*span{
+
+}*/
+
+footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: grey;
 	text-align: center;
 	font-size: 15px;
+
 }
