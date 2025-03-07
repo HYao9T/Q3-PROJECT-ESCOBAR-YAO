@@ -65,9 +65,9 @@
 			<label for="leave"><span>Leaving from:</span></label>
 			<br />
 			<select id="leave_from" class="form-control">
-				<option>Roosevelt</option>
-				<option>Santolan</option>
-				<option>North Avenue</option>
+				<option value="Roosevelt">Roosevelt</option>
+				<option value="Santolan">Santolan</option>
+				<option value="North Avenue">North Avenue</option>
 			</select>
 
 			<br />
@@ -75,15 +75,15 @@
 			<label for="going"><span>Going to:</span></label>
 			<br />
 			<select id="going_to" class="form-control">
-				<option>Baclaran</option>
-				<option>Recto</option>
-				<option>Taft Avenue</option>
+				<option value="Baclaran">Baclaran</option>
+				<option value="Recto">Recto</option>
+				<option value="Taft Avenue">Taft Avenue</option>
 			</select>
 		</form>
 
 		<div class="button-fee" id="price-button">
-			<button type="button" class="btn btn-warning" id="regular_f">Regular Fare</button>
-			<button type="button" class="btn btn-warning" id="discounted_f">Discounted Fare</button>
+			<button type="button" class="btn btn-info" id="regular_f" onclick="">Regular Fare</button>
+			<button type="button" class="btn btn-info" id="discounted_f" onclick="">Discounted Fare</button>
 		</div>
 	</div>
 
@@ -111,7 +111,7 @@
 			<input type="email" class="form-control" id="email" placeholder="Input your EMAIL">
 			<br>
 
-			<button type="button" class="btn btn-warning mb-2">Submit Feedback</button>
+			<button type="button" class="btn btn-info mb-2" onClick="window.location.reload()">Submit Feedback</button>
 		</form>
 	</div>
 
