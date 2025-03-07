@@ -1,59 +1,62 @@
 
 
-/*STYLE: BOTH*/
+	/*STYLE: BOTH*/
 
-h1 {
-	text-align: center;
-	background-color: lightblue;
-}
+	h1 {
+		text-align: center;
+		background-color: lightblue;
+	}
 
-p {
-	text-align: center;
-}
+	p {
+		text-align: center;
+	}
 
-#page1{
-	padding: 20px;
-}
+	#page1{
+		padding: 20px;
+	}
 
-form{
-	width: 300px;
-	margin: auto;
-}
+	form{
+		width: 300px;
+		margin: auto;
+	}
 
-h1{
-	text-align: center;
-}
 
-button{
-	margin: auto;
-	align-content: center;
-}
+	#page2{
+		margin-top: -50%;
+		padding: 10px;
+	}
+	h1{
+		text-align: center;
+	}
 
-#mrt-schedule{
-	margin-top: -70%;
-	width: 1000px;
-}
+	button{
+		margin: auto;
+		align-content: center;
+	}
 
-#page3{
-	margin-top: -45%;
-}
+	#mrt-schedule{
+		width: 1000px;
+	}
 
-footer{
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	background-color: lightblue;
-	border: black solid 1px;
-	text-align: center;
-	font-size: 15px;
+	#page3{
+		margin-top: -30%;
+	}
 
-}
+	footer{
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		background-color: lightblue;
+		border: black solid 1px;
+		text-align: center;
+		font-size: 15px;
 
-.container{
-	padding: 10px;
-	text-align: center;
-}
+	}
 
-.form-control{
-	width: 300px;
-}
+	.container{
+		text-align: center;
+	}
+
+	.form-control{
+		width: 300px;
+	}
