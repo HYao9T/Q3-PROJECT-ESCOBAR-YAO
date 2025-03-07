@@ -30,8 +30,7 @@ button{
 }
 
 #mrt-schedule{
-	margin-left: 15%;
-	margin-top: -50%;
+	margin-top: -70%;
 	width: 1000px;
 }
 
@@ -52,6 +51,7 @@ footer{
 
 .container{
 	padding: 10px;
+	text-align: center;
 }
 
 .form-control{
