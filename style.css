@@ -7,7 +7,7 @@ p {
 	text-align: center;
 }
 
-.tab-content{
+#page1{
 	padding: 20px;
 }
 
@@ -22,18 +22,34 @@ h1{
 
 button{
 	margin: auto;
+	align-content: center;
 }
 
-/*span{
+#mrt-schedule{
+	margin-left: 15%;
+	margin-top: -50%;
+	width: 1000px;
+}
 
-}*/
+#page3{
+	margin-top: -45%;
+}
 
 footer{
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	background-color: grey;
+	background-color: lightblue;
+	border: black solid 1px;
 	text-align: center;
 	font-size: 15px;
 
+}
+
+.container{
+	padding: 10px;
+}
+
+.form-control{
+	width: 300px;
 }
