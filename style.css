@@ -2,28 +2,56 @@
 
 	/*STYLE: BOTH*/
 
+	body{
+		background-image: url(https://img.freepik.com/free-photo/paper-background_53876-147734.jpg);
+		color: #333333;
+	}
 	h1 {
 		text-align: center;
 		background-color: lightblue;
+	}
+
+	label{
+		padding: 10px;
+		font-size: 20px;
 	}
 
 	p {
 		text-align: center;
 	}
 
+
+/*PAGE 1*/
 	#page1{
 		padding: 50px;
+		margin: auto;
 	}
+
+	#page1 button{
+		margin-top: 10%;
+	}
+
+		#train-fare{
+		background-color: sienna;
+		box-shadow: -1px 2px 30px -3px rgba(0,0,0,0.54);
+		color: white;
+		padding: 20px;
+	}
+
+/*PAGE 2*/
 
 	#page2{
 		padding: 50px;
 	}
 
+/*PAGE 3*/
 
 	#page3{
 		padding: 50px;
+		margin: auto;
 	}
 
+/*FORM*/
 	form{
 		width: 300px;
 		margin: auto;
@@ -38,8 +66,14 @@
 		align-content: center;
 	}
 
+/*PAGE 2*/
 	#mrt-schedule{
 		width: 1000px;
+	}
+
+	img{
+		border-radius: 10px;
+		box-shadow: -1px 2px 30px -3px rgba(0,0,0,0.54);
 	}
 
 	footer{
@@ -59,4 +93,5 @@
 
 	.form-control{
 		width: 300px;
+		border: #473F3B solid 1px;
 	}
