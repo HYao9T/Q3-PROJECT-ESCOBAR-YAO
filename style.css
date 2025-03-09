@@ -12,7 +12,16 @@
 	}
 
 	#page1{
-		padding: 20px;
+		padding: 50px;
+	}
+
+	#page2{
+		padding: 50px;
+	}
+
+
+	#page3{
+		padding: 50px;
 	}
 
 	form{
@@ -20,11 +29,6 @@
 		margin: auto;
 	}
 
-
-	#page2{
-		margin-top: -50%;
-		padding: 10px;
-	}
 	h1{
 		text-align: center;
 	}
@@ -36,10 +40,6 @@
 
 	#mrt-schedule{
 		width: 1000px;
-	}
-
-	#page3{
-		margin-top: -30%;
 	}
 
 	footer{
