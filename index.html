@@ -1,135 +1,125 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Q3 Project: Train Fare</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Q3: TRAIN FARE</title>
 
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="style.css">
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-	<!-- NAVIGATION BAR: YAO -->
-		<nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="navbar">
 
-			<div class="container-fluid">
-			    <a class="navbar-brand" href="index.html"><img src="https://cdn-icons-png.flaticon.com/512/236/236987.png" style="border-radius: 100%; width: 60px" alt="logo" id="logo"></a>
+   <!-- NAVIGATION BAR: YAO -->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="navbar">
 
-			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-			      <span class="navbar-toggler-icon"></span>
-			    </button>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="https://cdn-icons-png.flaticon.com/512/236/236987.png" style="border-radius: 100%; width: 60px" alt="logo" id="logo"></a>
 
-	   			 <div class="collapse navbar-collapse" id="mynavbar">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
 
-	      			<ul class="nav nav-pill me-auto">
+                 <div class="collapse navbar-collapse" id="mynavbar">
 
-			    		<!-- PAGE 1: HOMEPAGE | CALCULATE -->
-					 	<li class="nav-item">
-					        <a class="nav-link active" data-bs-toggle="pill" href="#page1"><strong>Homepage</strong></a>
-			       		 </li>
+                    <ul class="nav nav-pill me-auto">
 
-			       		 <!-- PAGE 2: SCHEDULE | CHART -->
-			       		 <li class="nav-item">
-					        <a class="nav-link" data-bs-toggle="pill" href="#page2"><strong>Train Schedule</strong></a>
-			       		 </li>
+                        <!-- PAGE 1: HOMEPAGE | CALCULATE -->
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="pill" href="#page1"><strong>Homepage</strong></a>
+                         </li>
 
-			       		 <!-- PAGE 3: CONTACT | HELP -->
-			       		  <li class="nav-item">
-					        <a class="nav-link" data-bs-toggle="pill" href="#page3"><strong>Help</strong></a>
-			       		 </li>
-				     </ul>
+                         <!-- PAGE 2: SCHEDULE | CHART -->
+                         <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="pill" href="#page2"><strong>Train Schedule</strong></a>
+                         </li>
 
-				     <img src="https://static.vecteezy.com/system/resources/thumbnails/020/389/066/small/search-icon-magnifier-glass-png.png" style="border-radius: 100%; width: 60px; padding: 10px" alt="search" id="search"><input type="text" placeholder="Search.." class="form-control">
-				</div>
-			</div>
-		</nav>
+                         <!-- PAGE 3: CONTACT | HELP -->
+                          <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="pill" href="#page3"><strong>Help</strong></a>
+                         </li>
+                     </ul>
 
+                     <img src="https://static.vecteezy.com/system/resources/thumbnails/020/389/066/small/search-icon-magnifier-glass-png.png" style="border-radius: 100%; width: 60px; padding: 10px" alt="search" id="search"><input type="text" placeholder="Search.." class="form-control">
+                </div>
+            </div>
+        </nav>
 
-	<div class="container active fade show" id="page1">
+    <div class="tab-content">
+        <!-- PAGE 1: YAO -->
+        <div class="container tab-pane active fade show" id="page1">
+            <h1>Fare Guide</h1>
+            <hr />
 
-		<!-- PAGE 1 HOMEPAGE: YAO-->
+            <img src="https://www.researchgate.net/profile/Joseph-Rei-Mark-Co-2/publication/338684954/figure/fig2/AS:849082482429954@1579448447262/Metro-Manila-railway-transit-map.ppm">
 
-		<h1>Fare Guide</h1>
+            <form>
+                <label for="leave_from"><span>Leaving from:</span></label>
+                <select id="leave_from" class="form-control">
+                    <option value="Roosevelt">Roosevelt</option>
+                    <option value="Santolan">Santolan</option>
+                    <option value="North Avenue">North Avenue</option>
+                </select>
 
-		<hr />
-		<!-- FORM -->
+                <br />
 
-		<img src="https://www.researchgate.net/profile/Joseph-Rei-Mark-Co-2/publication/338684954/figure/fig2/AS:849082482429954@1579448447262/Metro-Manila-railway-transit-map.ppm">
+                <label for="going_to"><span>Going to:</span></label>
+                <select id="going_to" class="form-control">
+                    <option value="Baclaran">Baclaran</option>
+                    <option value="Recto">Recto</option>
+                    <option value="Taft Avenue">Taft Avenue</option>
+                </select>
+            </form>
 
-		<form>
-			<label for="leave"><span>Leaving from:</span></label>
-			<br />
-			<select id="leave_from" class="form-control">
-				<option value="Roosevelt">Roosevelt</option>
-				<option value="Santolan">Santolan</option>
-				<option value="North Avenue">North Avenue</option>
-			</select>
+            <div class="button-fee mt-3">
+                <button type="button" class="btn btn-warning" id="regular_f" onclick="calculateFare()">Regular Fare</button>
+                <button type="button" class="btn btn-warning" id="discounted_f" onclick="calculateFare()">Discounted Fare</button>
+            </div>
 
-			<br />
+            <h3 class="mt-3">Fare Price: <span id="fare_price">₱28.00</span></h3>
+        </div>
 
-			<label for="going"><span>Going to:</span></label>
-			<br />
-			<select id="going_to" class="form-control">
-				<option value="Baclaran">Baclaran</option>
-				<option value="Recto">Recto</option>
-				<option value="Taft Avenue">Taft Avenue</option>
-			</select>
-		</form>
+        <!-- PAGE 2: ESCOBAR -->
+        <div class="container tab-pane fade" id="page2">
+            <h1>Train Schedule</h1>
+            <hr>
+            <img src="https://whengmanalo.wordpress.com/wp-content/uploads/2012/02/mrt-schedule.jpg" id="mrt-schedule">
+        </div>
 
-		<div class="button-fee" id="price-button">
-			<button type="button" class="btn btn-info" id="regular_f" onclick="">Regular Fare</button>
-			<button type="button" class="btn btn-info" id="discounted_f" onclick="">Discounted Fare</button>
-		</div>
-	</div>
+        <!-- PAGE 3: ESCOBAR -->
+        <div class="container tab-pane fade" id="page3">
+            <h1>Leave a Comment?</h1>
+            <hr>
+            <p>Every feedback counts! So let us know what you think</p>
 
-<!-- PAGE2 CHART: YAO -->
-	<div class="container fade" id="page2">
-		<h1>Train Schedule</h1>
-		<hr>
-		<br />
-		<img src="https://whengmanalo.wordpress.com/wp-content/uploads/2012/02/mrt-schedule.jpg" id="mrt-schedule">
-	</div>
+            <form>
+                <label for="feedbackForm">Feedback:</label>
+                <textarea name="comments" class="form-control" rows="6"></textarea>
 
-<!-- 	PAGE3 CONTACT: ESCOBAR -->
-	<div class="container fade" id="page3">
-			<h1>Leave a Comment?</h1>
-			<hr>
-	<p>Every feedback counts! So let us know what you think</p>
+                <br>
+                <label for="fullname">Enter name:</label>
+                <input type="text" class="form-control" id="fullname" placeholder="Input FULL name">
+                
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Input your EMAIL">
 
-	<div class="feedback">
-		<form>
-			<label for="feedbackForm">Feedback:</label>
-			<textarea name="comments" class="form-control" rows="6" cols="40"></textarea>
-			<br>
-			<label for="">Enter name:</label>
-			<input type="text" class="form-control" id="fullname" placeholder="Input FULL name">
-			<br>
-			<label for="">Email:</label>
-			<input type="email" class="form-control" id="email" placeholder="Input your EMAIL">
-			<br>
+                <br>
+                <button type="button" class="btn btn-warning mb-2" onClick="window.location.reload()">Submit Feedback</button>
+            </form>
 
-			<button type="button" class="btn btn-info mb-2" onClick="window.location.reload()">Submit Feedback</button>
-		</form>
-	</div>
+            <h1>Help</h1>
+            <p>For any assistance, feel free to contact us</p>
+            <p><strong>Our Office:</strong> 100 Jupiter, Makati, Metro Manila, Philippines.</p>
+        </div>
+    </div>
 
-		<h1>Help</h1>
-		<p>For any assistance, feel free to contact us</p>
-		<br>
-		<p><strong>Our Office:</strong> 100 Jupiter, Makati, Metro Manila, Philippines.</p>
-		<br>
-		<hr>
-		
-	</div>
+    <footer>
+        <p>&#169;2025 | Harmony Gail K. Yao | Skyler Greice Immaya A. Escobar | 9 Topaz</p>
+    </footer>
 
-
-	<footer>
-		<p>&#169;2025 | Harmony Gail K. Yao | Skyler Greice Immaya A. Escobar | 9 Topaz</p>
-	</footer>
 </body>
-
 </html>
