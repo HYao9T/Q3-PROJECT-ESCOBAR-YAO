@@ -1,118 +1,121 @@
-/*STYLE: BOTH*/
+	/*STYLE: BOTH*/
 
-		body{
-			background-color: beige;
-			filter: brighteness(50%);
-			background-size: cover;
-			margin: 0;
-			padding: 0;
-		}
-
-
-		h1 {
-			text-align: center;
-			background-color: maroon;
-			font-family: courier;
-			color: gold;
-			border-radius: 12px;
-		}
+			body{
+				background-color: beige;
+				filter: brighteness(50%);
+				background-size: cover;
+				margin: 0;
+				padding: 0;
+			}
 
 
-		label {
-			padding: 10px;
-			font-size: 20px;
-		}
-
-		p{
-			color: black;
-		}
-
-		nav {
-			background-color: #550C18;
-		}
-
-		#page1{
-			margin-top: 5%;
-			margin-bottom: 10%;
-			padding: 20px;
-		}
+			h1 {
+				text-align: center;
+				background-color: maroon;
+				font-family: courier;
+				color: gold;
+				border-radius: 12px;
+			}
 
 
-		#page1 img{
-			margin-top: -40%;
-			padding: 20px;
-		}
+			label {
+				padding: 10px;
+				font-size: 20px;
+			}
 
-		#page1 form{
-			width: 500px;
-			background-color: #550C18;
-			color: #f4f4f4;
-			display: inline-block;
-			text-align: left;
-			padding: 10px;
+			p{
+				color: black;
+			}
 
-		}
+			nav {
+				background-color: #550C18;
+			}
 
-		#page2{
-			margin-top: 5%;
-			margin-bottom: 10%;
-		}
-
-		#page3{
-			padding: 30px;
-		}
-
-		#page3 form{
-			width: 1000px;
-			margin: auto;
-			background-color: #550C18;
-			color: #f4f4f4;
-		}
-
-		form{
-			border-radius: 12px;
-		}		
-
-		.fares{
-			padding: 10px;
-			border: dashed white 2px;
-			font-size: 20px;
-		}
+			#page1{
+				margin-top: 5%;
+				margin-bottom: 10%;
+				padding: 20px;
+			}
 
 
-		h1{
-			text-align: center;
-		}
+			#page1 img{
+				margin-top: -40%;
+				padding: 20px;
+			}
 
-		button{
-			align-content: center;
-		}
+			#page1 form{
+				width: 500px;
+				background-color: #550C18;
+				color: #f4f4f4;
+				display: inline-block;
+				text-align: left;
+				padding: 10px;
 
-	/*PAGE 2*/
-		#mrt-schedule{
-			width: 1000px;
-		}
+			}
 
-		footer{
-			position: fixed;
-			bottom: 0;
-			width: 100%;
-			background-color: maroon;
-			border: black solid 1px;
-			text-align: center;
-			font-size: 15px;
+			#page2{
+				margin-top: 5%;
+				margin-bottom: 10%;
+			}
 
-		}
+			#page3{
+				padding: 30px;
+			}
 
-		footer p{
-			color: white;
-		}
+			#page3 form{
+				background-color: #550C18;
+				text-align: center;
+				color: #f4f4f4;
+			}
 
-		.container{
-			text-align: center;
-		}
+			form{
+				border-radius: 12px;
+			}		
 
-		.form-control{
-			width: 300px;
-			border: #473F3B solid 1px;
-		}
+			.fares{
+				padding: 10px;
+				border: dashed white 2px;
+				font-size: 20px;
+			}
+
+
+			h1{
+				text-align: center;
+			}
+
+			button{
+				align-content: center;
+			}
+
+		/*PAGE 2*/
+			#mrt-schedule{
+				width: 1000px;
+			}
+
+			footer{
+				position: fixed;
+				bottom: 0;
+				width: 100%;
+				background-color: maroon;
+				border: black solid 1px;
+				text-align: center;
+				font-size: 15px;
+
+			}
+
+			footer p{
+				color: white;
+			}
+
+			.container{
+				text-align: center;
+			}
+
+			#page3 .form-control{
+				margin: auto;
+			}
+
+			.form-control{
+				width: 300px;
+				border: #473F3B solid 1px;
+			}
