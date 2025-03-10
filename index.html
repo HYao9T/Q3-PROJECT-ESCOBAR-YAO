@@ -25,21 +25,21 @@
 
 	                 <div class="collapse navbar-collapse" id="mynavbar">
 
-	                    <ul class="nav nav-pill me-auto">
+	                    <ul class="nav nav-tabs me-auto">
 
 	                        <!-- PAGE 1: HOMEPAGE | CALCULATE -->
 	                        <li class="nav-item">
-	                            <a class="nav-link active" data-bs-toggle="pill" href="#page1"><strong>Homepage</strong></a>
+	                            <a class="nav-link active" data-bs-toggle="tab" href="#page1"><strong>Homepage</strong></a>
 	                         </li>
 
 	                         <!-- PAGE 2: SCHEDULE | CHART -->
 	                         <li class="nav-item">
-	                            <a class="nav-link" data-bs-toggle="pill" href="#page2"><strong>Train Schedule</strong></a>
+	                            <a class="nav-link" data-bs-toggle="tab" href="#page2"><strong>Train Schedule</strong></a>
 	                         </li>
 
 	                         <!-- PAGE 3: CONTACT | HELP -->
 	                          <li class="nav-item">
-	                            <a class="nav-link" data-bs-toggle="pill" href="#page3"><strong>Help</strong></a>
+	                            <a class="nav-link" data-bs-toggle="tab" href="#page3"><strong>Help</strong></a>
 	                         </li>
 	                     </ul>
 
@@ -58,8 +58,9 @@
 
 	            <!-- DESTINATION -->
 	            <form>
-	                <label for="leave"><span>Leaving from:</span></label>
+	                <label for="leave_from"><span>Leaving from:</span></label>
 	                <select id="leave_from" name="leave_from" class="form-control">
+	                	<option disabled value="leaving">Select Destination</option>
 	                    <option value="Roosevelt" id="roosevelt">Roosevelt</option>
 	                    <option value="Santolan" id="santolan">Santolan</option>
 	                    <option value="North Avenue" id="north_ave">North Avenue</option>
@@ -67,8 +68,9 @@
 
 	                <br />
 
-	                <label for="going"><span>Going to:</span></label>
+	                <label for="going_to"><span>Going to:</span></label>
 	                <select id="going_to" name="going_to" class="form-control">
+	                	<option disabled value="going">Select Destination</option>
 	                    <option value="Baclaran" id="baclaran">Baclaran</option>
 	                    <option value="Recto" id="recto">Recto</option>
 	                    <option value="Taft Avenue" id="taft_ave">Taft Avenue</option>
@@ -77,19 +79,31 @@
 
 	           <!-- BUTTONS -->
 
-	           <form>
-	           	<label for="discount"><span>Total Fare:</span></label>
-	                <select id="discount_fare" name="discount" class="form-control">
-	                    <option value="student" id="student">Student</option>
-	                    <option value="senior" id="senior">Senior Citizen</option>
-	                </select>
-	            </form>
+	          <form>
+			    <label for="discount_fare"><span>Total Fare:</span></label>
+			    <select id="discountID" name="discount" class="form-control">
+			        <option disabled value="select_discount">Select Discount</option>
+			        <option value="regular">Regular</option>
+			        <option value="student">Student</option>
+			        <option value="senior">Senior Citizen</option>
+			    </select>
+			</form>
 
-	            <h3 id="regularFare">Your regular fare is </h3>
+			<br />
 
-				<button type="button" id="regular_f" class="btn btn-warning" onclick=" getElementById('regularFare') .innerHTML = 'your regular fare is ₱28.00'">Regular Fare </button>
+			<!-- BUTTONS -->
+			<h3 id="regularFare">Your regular fare is </h3>
 
-		  		<button type="button" class="btn btn-warning" id="discounted_f" onclick="discountFare()">Discounted Fare</button>
+			<button type="button" id="regular_f" class="btn btn-warning" 
+			    onclick="document.getElementById('regularFare').innerHTML = 'Your regular fare: ₱28.00'">
+			    Regular Fare
+			</button>
+
+			<button type="button" class="btn btn-warning" id="discounted_f" onclick="discountFare()">
+			    Discounted Fare
+			</button>
+
+		</div>
 
 
 	        <!-- PAGE 2: ESCOBAR -->
