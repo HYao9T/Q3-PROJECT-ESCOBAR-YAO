@@ -3,9 +3,10 @@
 		/*STYLE: BOTH*/
 
 		body{
-			background-image: url(https://img.freepik.com/free-photo/paper-background_53876-147734.jpg);
+			background-image: url(https://thetransitpass.wordpress.com/wp-content/uploads/2010/04/metro-wallpaper.jpg);
 			color: #333333;
 		}
+
 		h1 {
 			text-align: center;
 			background-color: maroon;
@@ -14,7 +15,7 @@
 		}
 
 
-		label{
+		label {
 			padding: 10px;
 			font-size: 20px;
 		}
