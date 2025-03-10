@@ -79,9 +79,8 @@
 	                </select>
 	            </form>
 
-	           <!-- BUTTONS -->
-
-	          <form>
+	          <!-- DISCOUNTED AREA -->
+	         <form>
 			    <label for="discount_fare"><span>Total Fare:</span></label>
 			    <select id="discountID" name="discount" class="form-control">
 			        <option disabled value="select_discount">Select Discount</option>
@@ -92,20 +91,24 @@
 			</form>
 
 			<br />
+			<!-- REGULAR BUTTON -->
+			<div class="fares">
+			<h3 id="regularFare">Your regular fare is</h3>
+			<h3 id="discountFare">Your discounted fare is</h3>
+			</div>
 
-			<!-- BUTTONS -->
-			<h3 id="regularFare">Your regular fare is </h3>
+			<br />
 
+			<!-- DISCOUNTED BUTTON -->
 			<button type="button" id="regular_f" class="btn btn-warning" 
 			    onclick="document.getElementById('regularFare').innerHTML = 'Your regular fare: ₱28.00'">
 			    Price Fare
 			</button>
 
-			<button type="button" class="btn btn-warning" id="discounted_f" onclick="discountFare()">
-			    Discounted Fare</button>
-
+			<button type="button" id="discounted_f" class="btn btn-warning" onclick="discountFare()">Discounted Fare</button>
 		</div>
-
+			
+			
 
 	        <!-- PAGE 2: ESCOBAR -->
 	        <div class="container tab-pane fade" id="page2">
