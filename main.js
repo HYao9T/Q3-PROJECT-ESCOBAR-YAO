@@ -1,3 +1,6 @@
+
+
+// JAVASCRIPT: BOTH
 function discountFare() {
     let seatType = document.getElementById("discountID").value;
     let price = 28;
