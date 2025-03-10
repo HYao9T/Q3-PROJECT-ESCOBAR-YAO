@@ -11,6 +11,7 @@
 		background-color: lightblue;
 	}
 
+
 	label{
 		padding: 10px;
 		font-size: 20px;
@@ -21,9 +22,11 @@
 	}
 
 
+
 /*PAGE 1*/
 	#page1{
 		padding: 50px;
+		margin: auto;
 	}
 
 	#page1 button{
@@ -47,11 +50,13 @@
 /*FORM*/
 	form{
 		width: 300px;
+		margin: auto;
 	}
 
-	.regular_Fare{
+	#regularFare{
 		background-color: sienna;
-		box-shadow: -1px 2px 30px -3px rgba(0,0,0,0.54);\
+		box-shadow: -1px 2px 30px -3px rgba(0,0,0,0.54);
+		margin: auto;
 		color: white;
 		width: 300px;
 		height: 100px
