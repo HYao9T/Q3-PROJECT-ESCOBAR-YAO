@@ -8,8 +8,7 @@
 	}
 	h1 {
 		text-align: center;
-		background-color: maroon;
-		color: white;
+		background-color: lightblue;
 	}
 
 	label{
@@ -32,12 +31,6 @@
 		margin-top: 10%;
 	}
 
-		#train-fare{
-		background-color: sienna;
-		box-shadow: -1px 2px 30px -3px rgba(0,0,0,0.54);
-		color: white;
-		padding: 20px;
-	}
 
 /*PAGE 2*/
 
@@ -56,6 +49,16 @@
 	form{
 		width: 300px;
 		margin: auto;
+	}
+
+	#regularFare{
+		background-color: sienna;
+		box-shadow: -1px 2px 30px -3px rgba(0,0,0,0.54);
+		margin-top: 20px;
+		color: white;
+		width: 300px;
+		height: 100px
+
 	}
 
 	h1{
