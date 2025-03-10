@@ -24,7 +24,6 @@
 /*PAGE 1*/
 	#page1{
 		padding: 50px;
-		margin: auto;
 	}
 
 	#page1 button{
@@ -48,13 +47,11 @@
 /*FORM*/
 	form{
 		width: 300px;
-		margin: auto;
 	}
 
-	#regularFare{
+	.regular_Fare{
 		background-color: sienna;
-		box-shadow: -1px 2px 30px -3px rgba(0,0,0,0.54);
-		margin-top: 20px;
+		box-shadow: -1px 2px 30px -3px rgba(0,0,0,0.54);\
 		color: white;
 		width: 300px;
 		height: 100px
