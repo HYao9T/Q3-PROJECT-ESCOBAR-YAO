@@ -19,6 +19,12 @@
 
 		p {
 			text-align: center;
+			background-color: maroon;
+		 	color: white;
+		}
+
+		nav {
+			background-color: maroon;
 		}
 
 
@@ -98,7 +104,7 @@
 			position: fixed;
 			bottom: 0;
 			width: 100%;
-			background-color: lightblue;
+			background-color: maroon;
 			border: black solid 1px;
 			text-align: center;
 			font-size: 15px;
