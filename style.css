@@ -1,19 +1,20 @@
-
-
-		/*STYLE: BOTH*/
+/*STYLE: BOTH*/
 
 		body{
-			background-image: url(https://i0.wp.com/www.printmag.com/wp-content/uploads/2012/08/2a34d8_d323c8296695475983afb1d69e1cb410mv2.jpg?resize=1000%2C688&quality=89&ssl=1);
+			background-color: beige;
+			filter: brighteness(50%);
 			background-size: cover;
 			margin: 0;
 			padding: 0;
 		}
+
 
 		h1 {
 			text-align: center;
 			background-color: maroon;
 			font-family: courier;
 			color: gold;
+			border-radius: 12px;
 		}
 
 
@@ -22,68 +23,60 @@
 			font-size: 20px;
 		}
 
-		p {
-			text-align: center;
-			background-color: maroon;
-		 	color: white;
+		p{
+			color: black;
 		}
 
-		navbar {
-			background-color: maroon;
+		nav {
+			background-color: #550C18;
 		}
 
-
-
-	/*PAGE 1*/
 		#page1{
-			padding: 50px;
-			margin: auto;
-		}
-
-		#page1 button{
-			margin-top: 10%;
+			margin-top: 5%;
+			margin-bottom: 10%;
+			padding: 20px;
 		}
 
 
-	/*PAGE 2*/
+		#page1 img{
+			margin-top: -40%;
+			padding: 20px;
+		}
+
+		#page1 form{
+			width: 500px;
+			background-color: #550C18;
+			color: #f4f4f4;
+			display: inline-block;
+			text-align: left;
+			padding: 10px;
+
+		}
 
 		#page2{
-			padding: 50px;
+			margin-top: 5%;
+			margin-bottom: 10%;
 		}
-
-	/*PAGE 3*/
 
 		#page3{
-			padding: 50px;
-			margin: auto;
+			padding: 30px;
 		}
 
-	/*FORM*/
+		#page3 form{
+			width: 1000px;
+			margin: auto;
+			background-color: #550C18;
+			color: #f4f4f4;
+		}
+
 		form{
-			width: 300px;
-			margin: auto;
-		}
-
-		#regularFare{
-			background-color: gold;
-			box-shadow: -1px 2px 30px -3px rgba(0,0,0,0.54);
-			color: maroon;
-			width: 300px;
-			height: 100px
-
-		}
-
-		#discountFare{
-			background-color: gold;
-			box-shadow: -1px 2px 30px -3px rgba(0,0,0,0.54);
-			color: maroon;
-			width: 300px;
-			height: 100px
-		}
+			border-radius: 12px;
+		}		
 
 		.fares{
-			display: inline-flex;
 			padding: 10px;
+			border: dashed white 2px;
+			font-size: 20px;
 		}
 
 
@@ -100,11 +93,6 @@
 			width: 1000px;
 		}
 
-		img{
-			border-radius: 10px;
-			box-shadow: -1px 2px 30px -3px rgba(0,0,0,0.54);
-		}
-
 		footer{
 			position: fixed;
 			bottom: 0;
@@ -114,6 +102,10 @@
 			text-align: center;
 			font-size: 15px;
 
+		}
+
+		footer p{
+			color: white;
 		}
 
 		.container{
