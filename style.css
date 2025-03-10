@@ -1,103 +1,115 @@
 
 
-	/*STYLE: BOTH*/
+		/*STYLE: BOTH*/
 
-	body{
-		background-image: url(https://img.freepik.com/free-photo/paper-background_53876-147734.jpg);
-		color: #333333;
-	}
-	h1 {
-		text-align: center;
-		background-color: lightblue;
-	}
-
-
-	label{
-		padding: 10px;
-		font-size: 20px;
-	}
-
-	p {
-		text-align: center;
-	}
+		body{
+			background-image: url(https://img.freepik.com/free-photo/paper-background_53876-147734.jpg);
+			color: #333333;
+		}
+		h1 {
+			text-align: center;
+			background-color: lightblue;
+		}
 
 
+		label{
+			padding: 10px;
+			font-size: 20px;
+		}
 
-/*PAGE 1*/
-	#page1{
-		padding: 50px;
-		margin: auto;
-	}
-
-	#page1 button{
-		margin-top: 10%;
-	}
+		p {
+			text-align: center;
+		}
 
 
-/*PAGE 2*/
 
-	#page2{
-		padding: 50px;
-	}
+	/*PAGE 1*/
+		#page1{
+			padding: 50px;
+			margin: auto;
+		}
 
-/*PAGE 3*/
+		#page1 button{
+			margin-top: 10%;
+		}
 
-	#page3{
-		padding: 50px;
-		margin: auto;
-	}
 
-/*FORM*/
-	form{
-		width: 300px;
-		margin: auto;
-	}
+	/*PAGE 2*/
 
-	#regularFare{
-		background-color: sienna;
-		box-shadow: -1px 2px 30px -3px rgba(0,0,0,0.54);
-		margin: auto;
-		color: white;
-		width: 300px;
-		height: 100px
+		#page2{
+			padding: 50px;
+		}
 
-	}
+	/*PAGE 3*/
 
-	h1{
-		text-align: center;
-	}
+		#page3{
+			padding: 50px;
+			margin: auto;
+		}
 
-	button{
-		margin: auto;
-		align-content: center;
-	}
+	/*FORM*/
+		form{
+			width: 300px;
+			margin: auto;
+		}
 
-/*PAGE 2*/
-	#mrt-schedule{
-		width: 1000px;
-	}
+		#regularFare{
+			background-color: sienna;
+			box-shadow: -1px 2px 30px -3px rgba(0,0,0,0.54);
+			color: white;
+			width: 300px;
+			height: 100px
 
-	img{
-		border-radius: 10px;
-		box-shadow: -1px 2px 30px -3px rgba(0,0,0,0.54);
-	}
+		}
 
-	footer{
-		position: fixed;
-		bottom: 0;
-		width: 100%;
-		background-color: lightblue;
-		border: black solid 1px;
-		text-align: center;
-		font-size: 15px;
+		#discountFare{
+			background-color: sienna;
+			box-shadow: -1px 2px 30px -3px rgba(0,0,0,0.54);
+			color: white;
+			width: 300px;
+			height: 100px
+		}
 
-	}
+		.fares{
+			display: inline-flex;
+			padding: 10px;
+		}
 
-	.container{
-		text-align: center;
-	}
 
-	.form-control{
-		width: 300px;
-		border: #473F3B solid 1px;
-	}
+		h1{
+			text-align: center;
+		}
+
+		button{
+			align-content: center;
+		}
+
+	/*PAGE 2*/
+		#mrt-schedule{
+			width: 1000px;
+		}
+
+		img{
+			border-radius: 10px;
+			box-shadow: -1px 2px 30px -3px rgba(0,0,0,0.54);
+		}
+
+		footer{
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			background-color: lightblue;
+			border: black solid 1px;
+			text-align: center;
+			font-size: 15px;
+
+		}
+
+		.container{
+			text-align: center;
+		}
+
+		.form-control{
+			width: 300px;
+			border: #473F3B solid 1px;
+		}
