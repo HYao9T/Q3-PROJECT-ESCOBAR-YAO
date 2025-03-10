@@ -16,7 +16,7 @@
 	<body>
 
 	   <!-- NAVIGATION BAR: YAO -->
-	        <nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="navbar">
+	        <nav class="navbar navbar-expand-sm" id="navbar">
 
 	            <div class="container-fluid">
 	                <a class="navbar-brand" href="index.html"><img src="https://cdn-icons-png.flaticon.com/512/236/236987.png" style="border-radius: 100%; width: 60px" alt="logo" id="logo"></a>
@@ -27,11 +27,11 @@
 
 	                 <div class="collapse navbar-collapse" id="mynavbar">
 
-	                    <ul class="nav nav-tabs me-auto">
+	                    <ul class="nav nav-pills me-auto">
 
 	                        <!-- PAGE 1: HOMEPAGE | CALCULATE -->
 	                        <li class="nav-item">
-	                            <a class="nav-link active" data-bs-toggle="tab" href="#page1"><strong>Homepage</strong></a>
+	                            <a class="nav-link active" data-bs-toggle="pill" href="#page1"><strong>Homepage</strong></a>
 	                         </li>
 
 	                         <!-- PAGE 2: SCHEDULE | CHART -->
@@ -53,14 +53,15 @@
 	    <div class="tab-content">
 	        <!-- PAGE 1: YAO -->
 	        <div class="container tab-pane active fade show" id="page1">
-	            <h1><i>Fare Guide</i></h1>
+	           
+	          <h1><i>Fare Guide</i></h1>
 	            <hr />
 
 	            <img src="https://www.researchgate.net/profile/Joseph-Rei-Mark-Co-2/publication/338684954/figure/fig2/AS:849082482429954@1579448447262/Metro-Manila-railway-transit-map.ppm">
 
-	            <!-- DESTINATION -->
+	            <!-- LEAVING FROM -->
 	            <form>
-	                <label for="leave_from"><span>Leaving from:</span></label>
+	                <label for="leave_from"><b>Leaving from:</b></label>
 	                <select id="leave_from" name="leave_from" class="form-control">
 	                	<option disabled value="leaving">Select Destination</option>
 	                    <option value="Roosevelt" id="roosevelt">Roosevelt</option>
@@ -70,25 +71,25 @@
 
 	                <br />
 
-	                <label for="going_to"><span>Going to:</span></label>
+	                <!-- GOING TO -->
+	                <label for="going_to"><b>Going to:</b></label>
 	                <select id="going_to" name="going_to" class="form-control">
 	                	<option disabled value="going">Select Destination</option>
 	                    <option value="Baclaran" id="baclaran">Baclaran</option>
 	                    <option value="Recto" id="recto">Recto</option>
 	                    <option value="Taft Avenue" id="taft_ave">Taft Avenue</option>
 	                </select>
-	            </form>
 
-	          <!-- DISCOUNTED AREA -->
-	         <form>
-			    <label for="discount_fare"><span>Total Fare:</span></label>
-			    <select id="discountID" name="discount" class="form-control">
-			        <option disabled value="select_discount">Select Discount</option>
-			        <option value="regular">Regular</option>
-			        <option value="student">Student</option>
-			        <option value="senior">Senior Citizen</option>
-			    </select>
-			</form>
+	                <br />
+
+	                <!-- TOTAL FARE: DISCOUNTED -->
+				    <label for="discount_fare"><b>Total Fare:</b></label>
+				    <select id="discountID" name="discount" class="form-control">
+				        <option disabled value="select_discount">Select Discount</option>
+				        <option value="regular">Regular</option>
+				        <option value="student">Student</option>
+				        <option value="senior">Senior Citizen</option>
+				    </select>
 
 			<br />
 			<!-- REGULAR BUTTON -->
@@ -101,11 +102,11 @@
 
 			<!-- DISCOUNTED BUTTON -->
 			<button type="button" id="regular_f" class="btn btn-warning" 
-			    onclick="document.getElementById('regularFare').innerHTML = 'Your regular fare: ₱28.00'">
-			    Price Fare
-			</button>
+			onclick="document.getElementById('regularFare').innerHTML = 'Your regular fare: ₱28.00'">Price Fare</button>
 
 			<button type="button" id="discounted_f" class="btn btn-warning" onclick="discountFare()">Discounted Fare</button>
+
+		</form>
 		</div>
 			
 			
@@ -124,20 +125,21 @@
 	            <p>Every feedback counts! So let us know what you think</p>
 
 	            <form>
-	                <label for="feedbackForm">Feedback:</label>
+	                <label for="feedbackForm"><b>Feedback:</b></label><br/>
 	                <textarea name="comments" class="form-control" rows="6"></textarea>
 
-	                <br>
-	                <label for="fullname">Enter name:</label>
+	            	<label for="fullname"><b>Enter name:</b></label><br />
 	                <input type="text" class="form-control" id="fullname" placeholder="Input FULL name">
 	                
 	                <br>
-	                <label for="email">Email:</label>
+	                <label for="email"><b>Email:</b></label><br />
 	                <input type="email" class="form-control" id="email" placeholder="Input your EMAIL">
 
-	                <br>
 	                <button type="button" class="btn btn-warning mb-2" onClick="window.location.reload()">Submit Feedback</button>
 	            </form>
+
+	            <br />
+	            <br />
 
 	            <h1>Help</h1>
 	            <p>For any assistance, feel free to contact us</p>
